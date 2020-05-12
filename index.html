@@ -1,0 +1,97 @@
+<html>
+  <head>
+    <title>lokl - WordPress local development for Mac, Win & Linux</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+@font-face {
+    font-family: 'WorkSans-Light';
+    src: url("WorkSans-Light.woff") format("woff");
+}
+
+html {
+  font-size:100%;text-align: center;font-family:'WorkSans-Light', sans-serif;
+  padding-top:2%;
+  padding-bottom:2%;
+
+}
+a {color:#0645ad;text-decoration:none;}
+
+input {max-width:95%;margin-bottom:14px;font-size:100%;text-align:center;padding:1% 0 1% 0;}
+
+button, select {font-size:100%;padding:1% 6% 1% 6%;}
+
+input:valid { background-color:#eafaf1; }
+
+.logo { width: 150px; margin-bottom: 1%;margin-top: 1%;}
+
+video { margin-bottom: 1%; }
+
+ul { list-style-type: none; }
+ul li { list-style-type: none; margin: 25px 0;}
+ol li { margin: 25px 0; }
+
+p {
+  margin-top: 25px;
+
+}
+code {
+  background-color: #95c3d8;
+  padding: 15px;
+  margin-top: 15px;
+
+}
+</style>
+<body>
+
+<h1>WordPress local development for Mac, Win & Linux</h1>
+
+<img class="logo" src="/logo.png" />
+
+<h2>Getting started with <span style="color:#1a7dab;">lokl</span></h2>
+
+<br>
+
+<ol>
+  <li>
+    <a href="https://docs.docker.com/get-docker/" >Install Docker</a>
+  </li>
+
+  <li>
+    Launch site with 1 command
+  </li>
+</ol>
+
+<br>
+  <code>name=clientsite1;port=4000; docker run -e N=$name -e P=$port --name=$name -p $port:$port -d lokl</code>
+
+<br>
+<br>
+<p><b>That's it!</b> In seconds, your WordPress site is all setup and accessible at <a href="#">http://clientsite1.localhost:4000</a></p>
+
+<img src="/lokl-welcome.png" style="border: 1px solid #95c3d8;" />
+
+<h4>Features</h4>
+
+<ul>
+  <li>Run 1 or 100's of sites quickly <i>(just use unique name and port in the command!)</i></li>
+  <li>Publish super fast live sites with bundled plugins</li>
+  <li>Forget about WordPress security headaches</li>
+  <li>Save hosting costs</li>
+</ul>
+
+<h4>The WordPress workflow you're used to, but better!</h4>
+
+<img src="/wp-admin.png" style="border: 1px solid #95c3d8;" />
+
+<ul>
+  <li>Comes pre-loaded with site performance plugins</li>
+  <li>Start fresh or import existing sites easily</li>
+  <li>PHPMyAdmin, web file editor and web SSH access for advanced users</li>
+  <li>1-click backups to avoid data loss</li>
+</ul>
+
+
+
+
+
